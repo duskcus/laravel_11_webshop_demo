@@ -9,19 +9,17 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/29c53c0003.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 
 <body class="mx-auto">
-    {{-- INCLUDES FOR COMPONENTS --}}
-    @include('components.navbar')
 
     <main class="bg-base-300 py-6 px-[10%]">
         {{-- YIELD FOR CONTENT --}}
         @yield('content')
     </main>
 
-    @include('components.footer')
-
 </body>
+@livewireScripts
 
 </html>
