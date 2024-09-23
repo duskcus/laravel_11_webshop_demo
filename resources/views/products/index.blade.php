@@ -4,12 +4,19 @@
 @section('content')
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
         @foreach ($products as $product)
-            @component('components.card')
-                <h2 class="card-title">{{ $product->name }}</h2>
-                <p>{{ $product->description }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-            @endcomponent
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                    <a href=""><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" /></a>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">{{ $product->name }}</h2>
+                    <p>{{ $product->description }}</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
         @endforeach
     </section>
 @endsection

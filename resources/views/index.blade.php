@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.no-padding')
 
 {{-- @SECTION FOR THE START CONTENT --}}
 
@@ -24,7 +24,7 @@
             <figure>
                 <a href="#">
                 <img
-                src="https://static.wikia.nocookie.net/tetrisconcept/images/5/51/T_Tetromino0.png/revision/latest?cb=20201205152323"
+                src="https://picsum.photos/500/150"
                 alt="Shoes" />
                 </a>
             </figure>
