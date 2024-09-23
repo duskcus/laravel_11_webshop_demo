@@ -9,6 +9,7 @@
 2. <code>npm install</code>
 3. <p>edit .ENV file if needed</p>
 4. <p>turn on MySQL localhost</p>
-4. <code>php artisan migrate:fresh --seed</code>
-5. <code>php artisan serve</code>
-6. <code>npm run dev</code>
+5. <code>php artisan migrate:fresh --seed</code>
+6. <code>php artisan serve</code>
+7. <code>npm run dev</code>
+8. <p>visit http://127.0.0.1:8000/</p>
