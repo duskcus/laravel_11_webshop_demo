@@ -11,4 +11,4 @@
 4. <p>turn on MySQL localhost</p>
 4. <code>php artisan migrate:fresh --seed</code>
 5. <code>php artisan serve</code>
-6. <code>run npm dev</code>
+6. <code>npm run dev</code>
