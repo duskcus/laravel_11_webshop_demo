@@ -29,11 +29,11 @@
                 </a>
             </figure>
             <div class="card-body">
-              <h2 class="card-title">title</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
+                <h2 class="card-title">title</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
                 <button class="btn rounded-md btn-primary btn-outline">Buy Now</button>
-              </div>
+                </div>
             </div>
         </div>
     @endfor
