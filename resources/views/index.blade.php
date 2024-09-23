@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.default')
 
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
