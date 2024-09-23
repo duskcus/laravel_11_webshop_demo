@@ -2,7 +2,14 @@
 
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-    <section>
-        hello world.
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
+        @foreach ($products as $product)
+            @component('components.card')
+                <h2 class="card-title">{{ $product->name }}</h2>
+                <p>{{ $product->description }}</p>
+                <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+            @endcomponent
+        @endforeach
     </section>
 @endsection
