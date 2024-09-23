@@ -7,8 +7,8 @@
 
 1. <code>composer install</code>
 2. <code>npm install</code>
-3. <code>edit .ENV file if needed</code>
-4. <code>turn on MySQL localhost</code>
+3. <p>edit .ENV file if needed</p>
+4. <p>turn on MySQL localhost</p>
 4. <code>php artisan migrate:fresh --seed</code>
 5. <code>php artisan serve</code>
 6. <code>run npm dev</code>
