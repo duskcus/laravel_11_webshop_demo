@@ -16,6 +16,10 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/dashboard', function () {
+    return view('authentication.dashboard');
+})->name('dashboard');
+
 // RESOURCES
 Route::resource('products', ProductController::class);
 
