@@ -1,7 +1,7 @@
 @extends('layouts.no-nav-footer')
 
 @section('content')
-<section class="max-w-lg mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
+<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
     <h2 class="text-lg font-semibold text-white text-center">Login</h2>
 
     <form action="{{ route('login') }}" method="POST">
