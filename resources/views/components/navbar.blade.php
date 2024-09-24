@@ -1,6 +1,6 @@
 <nav class="shadow-md bg-base-100 p-4">
 
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="px-[10%] mx-auto flex justify-between items-center">
 
         <!-- Logo -->
         <div class="flex items-center flex-shrink-0 text-white hover:text-gray-300 mr-6">
@@ -38,7 +38,7 @@
 
 
         {{-- Basket --}}
-        <div class="flex-none">
+        <div class="flex items-center ml-auto">
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                     <div class="indicator">
@@ -61,26 +61,35 @@
                 </div>
             </div>
 
-            {{-- Profile --}}
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                    </div>
-                </div>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li>
-                        <a class="justify-between">
-                            Profile
-                        </a>
-                    </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
-                </ul>
-            </div>
-        </div>
 
+
+            {{-- Profile --}}
+            @if (Auth::user())
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="Tailwind CSS Navbar component"
+                                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        </div>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            @else
+                <a href="{{ route('register') }}"
+                    class="block mt-4 lg:inline-block lg:mt-0 mr-4
+                {{ request()->routeIs('register') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
+                    <button class="btn btn-primary">Login</button>
+                </a>
+            @endif
+        </div>
     </div>
 </nav>
