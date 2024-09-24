@@ -6,7 +6,7 @@
         @foreach ($products as $product)
             <div class="card bg-base-100 shadow-xl">
                 <figure>
-                    <a href=""><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    <a href="{{ route('products.show', $product->id) }}"><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes" /></a>
                 </figure>
                 <div class="card-body">

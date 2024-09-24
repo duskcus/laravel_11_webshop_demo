@@ -24,7 +24,7 @@
             <figure>
                 <a href="#">
                 <img
-                src="https://picsum.photos/500/150"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                 alt="Shoes" />
                 </a>
             </figure>
