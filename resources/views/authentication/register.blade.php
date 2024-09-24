@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="w-[30%] mx-auto p-6 bg-base-100 rounded-md shadow-md">
-    <h2 class="text-lg font-semibold text-white text-center">Register</h2>
+    <h2 class="text-lg font-semibold text-center">Register</h2>
 
     <form action="{{ route('register') }}" method="POST">
         @csrf

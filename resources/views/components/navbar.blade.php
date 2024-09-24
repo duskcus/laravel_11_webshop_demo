@@ -3,7 +3,7 @@
     <div class="px-[10%] mx-auto flex justify-between items-center">
 
         <!-- Logo -->
-        <div class="flex items-center flex-shrink-0 text-white hover:text-gray-300 mr-6">
+        <div class="flex items-center flex-shrink-0 hover:text-gray-300 mr-6">
             {{-- <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path
                     d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-.707-6.293a1 1 0 1 1 1.414-1.414A2 2 0 0 0 10 8a2 2 0 0 0-1.707 1.707z" />
@@ -13,25 +13,25 @@
 
 
         <!-- Navigation Links -->
-        <div class="hidden md:block">
+        <div>
             <a href="{{ route('home') }}"
-                class="block mt-4 lg:inline-block lg:mt-0 mr-4
-            {{ request()->routeIs('home') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
+                class="link block mt-4 lg:inline-block lg:mt-0 mr-4
+            {{ request()->routeIs('home') ? 'text-primary' : 'hover:text-gray-300' }}">
                 Home
             </a>
             <a href="{{ route('products.index') }}"
-                class="block mt-4 lg:inline-block lg:mt-0 mr-4
-                {{ request()->routeIs('products.*') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
+                class="link block mt-4 lg:inline-block lg:mt-0 mr-4
+                {{ request()->routeIs('products.*') ? 'text-primary' : 'hover:text-gray-300' }}">
                 Products
             </a>
             <a href="{{ route('about') }}"
-                class="block mt-4 lg:inline-block lg:mt-0 mr-4
-            {{ request()->routeIs('about') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
+                class="link block mt-4 lg:inline-block lg:mt-0 mr-4
+            {{ request()->routeIs('about') ? 'text-primary' : 'hover:text-gray-300' }}">
                 About
             </a>
             <a href="{{ route('contact') }}"
-                class="block mt-4 lg:inline-block lg:mt-0 mr-4
-            {{ request()->routeIs('contact') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
+                class="link block mt-4 lg:inline-block lg:mt-0 mr-4
+            {{ request()->routeIs('contact') ? 'text-primary' : 'hover:text-gray-300' }}">
                 Contact
             </a>
         </div>
@@ -84,10 +84,10 @@
                     </ul>
                 </div>
             @else
-                <a href="{{ route('register') }}"
+                <a href="{{ route('login') }}"
                     class="block mt-4 lg:inline-block lg:mt-0 mr-4
-                {{ request()->routeIs('register') ? 'text-primary' : 'text-white hover:text-gray-300' }}">
-                    <button class="btn btn-primary">Login</button>
+                {{ request()->routeIs('login') ? 'text-primary' : 'hover:text-gray-300' }}">
+                    <button class="btn btn-primary ml-4">Login</button>
                 </a>
             @endif
         </div>
