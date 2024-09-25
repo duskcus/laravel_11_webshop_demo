@@ -1,4 +1,4 @@
-<nav class="shadow-md bg-neutral p-4">
+<nav class="shadow-md bg-base-100 p-4">
 
     <div class="px-[10%] mx-auto flex justify-between items-center">
 
@@ -50,7 +50,7 @@
                         <span class="badge badge-sm indicator-item">8</span>
                     </div>
                 </div>
-                <div tabindex="0" class="card card-compact dropdown-content bg-neutral z-[1] mt-3 w-52 shadow">
+                <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
                     <div class="card-body">
                         <span class="text-lg font-bold">8 Items</span>
                         <span class="text-info">Subtotal: $999</span>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-neutral rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li class="my-1 ml-3 font-bold text-primary">{{ Auth::user()->name }} </li>
                         <li><a href="{{ route('profile') }}">Profile</a></li>
                         <li><a href="{{ route('settings') }}">Settings</a></li>

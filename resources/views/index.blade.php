@@ -20,7 +20,7 @@
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 p-6">
 
     @for ($i = 0; $i < 3; $i++)
-        <div class="card card-compact bg-neutral shadow-xl">
+        <div class="card card-compact bg-base-100 shadow-xl">
             <figure>
                 <a href="#">
                 <img
