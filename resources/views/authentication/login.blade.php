@@ -1,8 +1,12 @@
 @extends('layouts.no-nav-footer')
 
 @section('content')
-<section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
-    <h2 class="text-lg font-semibold text-center">Login</h2>
+<section class="w-[30%] mx-auto py-8 px-12 bg-neutral rounded-md shadow-md">
+    <!-- Logo -->
+    <div class="text-center flex-shrink-0 my-6 mx-auto hover:opacity-75">
+        <!-- Img -->
+        <a href="{{ route('home') }}"><span class="font-semibold text-xl">TLMOD</span></a>
+    </div>
 
     <form action="{{ route('login') }}" method="POST">
         @csrf
@@ -33,6 +37,10 @@
 
         <div class="text-center mt-4">
             <a href="#" class="link link-primary">Forgot your password?</a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="{{ route('register') }}" class="link link-primary">Sign up</a>
         </div>
     </form>
 </section>

@@ -2,7 +2,7 @@
 
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
-    <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
+    <section class="mx-auto py-8 px-12 bg-neutral rounded-md shadow-mdg">
         <h1 class="text-4xl font-bold mb-6">About Us</h1>
         <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur cursus, orci erat viverra est, at laoreet lacus urna non odio. Praesent feugiat libero ac felis efficitur, a tempor lorem posuere. Nulla facilisi.

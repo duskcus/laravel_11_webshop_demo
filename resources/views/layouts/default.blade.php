@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html data-theme="light" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html data-theme="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <meta charset="UTF-8">
 <title>{{ config('app.name', 'Laravel') }}</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
