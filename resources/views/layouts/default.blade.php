@@ -10,6 +10,7 @@
     @vite('resources/css/app.css')
 </head>
 
+    
 <body class="mx-auto">
     {{-- INCLUDES FOR COMPONENTS --}}
     @include('components.navbar')
