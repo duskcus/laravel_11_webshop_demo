@@ -5,8 +5,10 @@
     <!-- Logo -->
     <div class="text-center flex-shrink-0 my-6 mx-auto hover:opacity-75">
         <!-- Img -->
-        <a href="{{ route('home') }}"><span class="font-semibold text-xl">TLMOD</span></a>
+        <a href="{{ route('home') }}"><span class="font-semibold text-xl">LOGONAME</span></a>
     </div>
+
+    @error('email') <span class="text-error">Incorrect credentials, try again.</span> @enderror
 
     <form action="{{ route('login') }}" method="POST">
         @csrf
@@ -33,7 +35,7 @@
         </div>
 
         <div class="mt-6">
-            <button class="btn btn-primary w-full">Login</button>
+            <button type="submit" class="btn btn-primary w-full">Login</button>
         </div>
 
     </form>
