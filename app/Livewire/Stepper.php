@@ -27,7 +27,7 @@ class Stepper extends Component
     {
         $this->validateStep();
 
-        if ($this->step < 3) {
+        if ($this->step < 4) {
             $this->step++;
         }
     }
@@ -71,9 +71,15 @@ class Stepper extends Component
                 $rules['formData.password'] = 'required|min:8';
                 break;
             case 2:
-                $rules['formData.name'] = 'required';
+                $rules['formData.email'] = 'required|email';
+                $rules['formData.password'] = 'required|min:8';
                 break;
             case 3:
+                $rules['formData.email'] = 'required|email';
+                $rules['formData.password'] = 'required|min:8';
+                break;
+            case 4:
+                $rules['formData.name'] = 'required';
                 break;
         }
         $this->validate($rules);
