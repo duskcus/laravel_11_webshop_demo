@@ -2,6 +2,7 @@
     <!-- Logo -->
     <div class="text-center flex-shrink-0 my-6 mx-auto hover:opacity-75">
         <!-- Img -->
+        {{-- <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" class="h-[50px] cursor-pointer"> --}}
         <a href="{{ route('home') }}"><span class="font-semibold text-xl">LOGONAME</span></a>
     </div>
     @if ($step === 1)
