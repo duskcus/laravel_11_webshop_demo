@@ -2,7 +2,7 @@
     <!-- Logo -->
     <div class="text-center flex-shrink-0 my-6 mx-auto hover:opacity-75">
         <!-- Img -->
-        <a href="{{ route('home') }}"><span class="font-semibold text-xl">TLMOD</span></a>
+        <a href="{{ route('home') }}"><span class="font-semibold text-xl">LOGONAME</span></a>
     </div>
     @if ($step === 1)
         {{-- Basic details --}}
