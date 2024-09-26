@@ -13,7 +13,7 @@
 
 <body class="mx-auto">
     {{-- INCLUDES FOR COMPONENTS --}}
-    @include('components.navbar')
+    @include('components.header')
 
     <main class="bg-base-300">
         {{-- YIELD FOR CONTENT --}}
