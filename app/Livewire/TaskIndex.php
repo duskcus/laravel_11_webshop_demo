@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Task;
 
-class TestComponent extends Component
+class TaskIndex extends Component
 {
     public function render()
     {
@@ -22,6 +22,6 @@ class TestComponent extends Component
             ];
         }
 
-        return view('livewire.test-component', ['calendarItems' => $calendarItems]);
+        return view('livewire.task-index', ['calendarItems' => $calendarItems]);
     }
 }
