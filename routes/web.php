@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TaskController;
+
 
 // STANDARD
 Route::get('/', function () {
@@ -29,8 +31,17 @@ Route::get('/settings', function () {
     return view('account.settings');
 })->name('settings');
 
+Route::get('/checkout', function () {
+    return view('checkout.index');
+})->name('checkout');
+
+Route::get('/test', function () {
+    return view('test');
+})->name('test');
+
 // RESOURCES
 Route::resource('products', ProductController::class);
+Route::resource('calendar', TaskController::class);
 
 // LOGIN
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
