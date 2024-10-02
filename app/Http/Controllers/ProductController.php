@@ -104,4 +104,10 @@ class ProductController extends Controller
         // Redirect to the products list with success message
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
+
+    public function api()
+    {
+        $products = Product::all();
+        return response()->json($products);
+    }
 }
