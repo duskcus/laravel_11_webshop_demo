@@ -38,14 +38,17 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
+            'category' => 'required|string|max:255',
         ]);
 
         // Create a new product
         Product::create($request->all());
 
         // Redirect to the products list with success message
-        return redirect()->route('products.index')->with('success', 'Product created successfully.');
+        return redirect()->route('products.create')->with('success', 'Product created successfully.');
     }
 
     /**
@@ -81,7 +84,10 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
+            'category' => 'required|string|max:255',
         ]);
 
         // Find the product by ID and update its details
