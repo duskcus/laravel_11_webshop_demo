@@ -4,10 +4,9 @@
 @section('content')
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
-        <form action="{{ route('products.create') }}" method="POST">
+        <form action="{{ route('products.store') }}" method="POST">
 
             @csrf
-            @method('GET')
 
             <div class="form-control mt-4">
                 <label class="label" for="name">
@@ -33,7 +32,6 @@
                 </label>
                 <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required>
             </div>
-            {{-- TODO --}}
             <div class="form-control mt-4">
                 <label class="label" for="image">
                     <span class="label-text">Image</span>
@@ -48,7 +46,7 @@
             </div>
 
             <div class="mt-6">
-                <button type="submit" class="btn btn-primary w-full">Change</button>
+                <button type="submit" class="btn btn-primary w-full">Create</button>
             </div>
 
         </form>
