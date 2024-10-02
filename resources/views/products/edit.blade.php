@@ -33,7 +33,6 @@
                 </label>
                 <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" value="{{$product->description}}" required>
             </div>
-            {{-- TODO --}}
             <div class="form-control mt-4">
                 <label class="label" for="image">
                     <span class="label-text">Image</span>
