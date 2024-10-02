@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('price');
-            $table->string('image')->nullable();
+            $table->string('image_url')->nullable();
             $table->integer('stock');
             $table->string('category');
             $table->timestamps(); // Standard to Laravel adds a created_at and updated_at
