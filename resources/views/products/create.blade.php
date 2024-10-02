@@ -39,10 +39,10 @@
                 <input type="text" name="description" id="description" class="input input-bordered w-full" placeholder="Description" required>
             </div>
             <div class="form-control mt-4">
-                <label class="label" for="image">
+                <label class="label" for="image_url">
                     <span class="label-text">Image</span>
                 </label>
-                <input type="url" name="image" id="image" class="input input-bordered w-full" placeholder="Image">
+                <input type="url" name="image_url" id="image_url" class="input input-bordered w-full" placeholder="Image">
             </div>
             <div class="form-control mt-4">
                 <label class="label" for="category">
