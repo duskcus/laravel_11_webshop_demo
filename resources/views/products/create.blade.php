@@ -4,6 +4,12 @@
 @section('content')
     <section class="w-[30%] mx-auto py-8 px-12 bg-base-100 rounded-md shadow-md">
 
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <form action="{{ route('products.store') }}" method="POST">
 
             @csrf
