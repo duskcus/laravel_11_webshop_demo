@@ -31,6 +31,14 @@
             {{ request()->routeIs('contact') ? 'text-primary' : 'hover:opacity-75' }}">
                 Contact
             </a>
+
+            @if (Auth::user())
+                <a href="{{ route('calendar') }}"
+                    class="link no-underline block mt-4 lg:inline-block lg:mt-0 mr-4
+                {{ request()->routeIs('calendar') ? 'text-primary' : 'hover:opacity-75' }}">
+                    Calendar
+                </a>
+            @endif
         </div>
 
 
