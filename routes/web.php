@@ -35,13 +35,12 @@ Route::get('/checkout', function () {
     return view('checkout.index');
 })->name('checkout');
 
-Route::get('/test', function () {
-    return view('test');
-})->name('test');
+Route::get('/calendar', function () {
+    return view('calendar.index');
+})->name('calendar');
 
 // RESOURCES
 Route::resource('products', ProductController::class);
-Route::resource('calendar', TaskController::class);
 
 // LOGIN
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
