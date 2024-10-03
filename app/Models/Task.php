@@ -28,6 +28,7 @@ class Task extends Model
         'start',
         'end',
         'description',
+        'location',
     ];
 
     public function users()
