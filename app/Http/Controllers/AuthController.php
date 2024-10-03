@@ -12,7 +12,7 @@ class AuthController extends Controller
     // Show the login form
     public function showLoginForm()
     {
-        return view('auth.login.index');
+        return view('authentication.login');
     }
 
     // Handle the login request
@@ -36,7 +36,7 @@ class AuthController extends Controller
 }
 
     // Handle the logout request
-     public function logout(Request $request)
+    public function logout(Request $request)
     {
         Auth::logout();
         return redirect('/login');
@@ -44,7 +44,7 @@ class AuthController extends Controller
 
     public function showRegistrationForm()
     {
-        return view('auth.register.index');
+        return view('authentication.register');
     }
 
     public function register(Request $request)
