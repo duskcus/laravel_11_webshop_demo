@@ -11,8 +11,7 @@ class Branch extends Model
         'columns' => [
             'name' => 50,
             'street' => 20,
-            'house_number' => 5,
-            'house_number_addition' => 2,
+            'house_number' => 7,
             'zip_code' => 10,
             'city' => 20,
             'country' => 20,
