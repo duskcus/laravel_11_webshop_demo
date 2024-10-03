@@ -8,9 +8,10 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 
-    
+
 <body class="mx-auto">
     {{-- INCLUDES FOR COMPONENTS --}}
     @include('components.header')
@@ -22,6 +23,7 @@
 
     @include('components.footer')
 
+    @livewireScripts
 </body>
 
 </html>
