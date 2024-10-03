@@ -1,4 +1,4 @@
-<h2>Download the right release for the chapter:</h2>
+<h2>Download the right release for each chapter:</h2>
 
 <p>PHP version: 8.3</p>
 <p>Laravel Version: </p>
