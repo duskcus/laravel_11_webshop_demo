@@ -20,6 +20,7 @@ class TaskIndex extends Component
                 'start' => $task->start,
                 'end' => $task->end,
                 'description' => $task->description,
+                'location' => $task->location,
             ];
         }
 
