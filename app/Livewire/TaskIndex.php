@@ -19,6 +19,7 @@ class TaskIndex extends Component
                 'title' => $task->title . ' ('.$task->title.')',
                 'start' => $task->start,
                 'end' => $task->end,
+                'description' => $task->description,
             ];
         }
 
