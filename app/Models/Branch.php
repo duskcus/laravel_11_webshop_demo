@@ -7,5 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Branch extends Model
 {
-    //
+    protected $searchable = [
+        'columns' => [
+            'name' => 50,
+            'street' => 20,
+            'house_number' => 5,
+            'house_number_addition' => 2,
+            'zip_code' => 10,
+            'city' => 20,
+            'country' => 20,
+            'business_number' => 10,
+            'vat_number' => 10,
+        ]
+    ];
 }
