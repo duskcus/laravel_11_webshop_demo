@@ -43,11 +43,11 @@ Route::get('/cart', function () {
 // CALENDAR
 Route::get('/calendar/user', function () {
     return view('calendar.user');
-})->name('calendar');
+})->name('calendarUser');
 
 Route::get('/calendar/admin', function () {
     return view('calendar.admin');
-})->name('calendar');
+})->name('calendarAdmin');
 
 // RESOURCES
 Route::resource('products', ProductController::class);
