@@ -32,10 +32,11 @@
                 Contact
             </a>
 
+
             @if (Auth::user())
-                <a href="{{ route('calendar') }}"
+                <a href="{{ route('calendar.user') }}"
                     class="link no-underline block mt-4 lg:inline-block lg:mt-0 mr-4
-                {{ request()->routeIs('calendar') ? 'text-primary' : 'hover:opacity-75' }}">
+                {{ request()->routeIs('calendar.user') ? 'text-primary' : 'hover:opacity-75' }}">
                     Calendar
                 </a>
             @endif
@@ -63,7 +64,7 @@
                         {{-- <span class="text-info">Subtotal: €{{ sum }}</span> --}}
                         <span class="text-info">Subtotal: €999.00</span>
                         <div class="card-actions">
-                            <button class="btn btn-primary btn-block">View cart</button>
+                            <a href="{{ route('cart') }}"><button class="btn btn-primary btn-block">View cart</button></a>
                         </div>
                     </div>
                 </div>
