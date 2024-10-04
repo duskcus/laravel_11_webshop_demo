@@ -18,6 +18,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+// USERS
 Route::get('/dashboard', function () {
     return view('authentication.dashboard');
 })->name('dashboard');
@@ -30,12 +31,22 @@ Route::get('/settings', function () {
     return view('account.settings');
 })->name('settings');
 
-Route::get('/checkout', function () {
-    return view('checkout.index');
-})->name('checkout');
+// CART
+Route::get('/cart', function () {
+    return view('cart.index');
+})->name('cart');
 
-Route::get('/calendar', function () {
-    return view('calendar.index');
+Route::get('/cart', function () {
+    return view('cart.index');
+})->name('cart');
+
+// CALENDAR
+Route::get('/calendar/user', function () {
+    return view('calendar.user');
+})->name('calendar');
+
+Route::get('/calendar/admin', function () {
+    return view('calendar.admin');
 })->name('calendar');
 
 // RESOURCES
