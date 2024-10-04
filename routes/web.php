@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CalendarController;
 
 
 // STANDARD
@@ -19,10 +20,6 @@ Route::get('/contact', function () {
 })->name('contact');
 
 // USERS
-Route::get('/dashboard', function () {
-    return view('authentication.dashboard');
-})->name('dashboard');
-
 Route::get('/profile', function () {
     return view('account.profile');
 })->name('profile');
@@ -40,17 +37,9 @@ Route::get('/cart', function () {
     return view('cart.index');
 })->name('cart');
 
-// CALENDAR
-Route::get('/calendar/user', function () {
-    return view('calendar.user');
-})->name('calendarUser');
-
-Route::get('/calendar/admin', function () {
-    return view('calendar.admin');
-})->name('calendarAdmin');
-
 // RESOURCES
 Route::resource('products', ProductController::class);
+Route::resource('calendars', CalendarController::class);
 
 // LOGIN
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
