@@ -1,6 +1,8 @@
 <h2>Download the right release for each chapter:</h2>
 <p>I recommend downloading the chapter as I'm still regularly updating/breaking the repository</p>
 
+<br>
+
 <p>PHP version: 8.3</p>
 <p>Laravel Version: </p>
 <p>Composer Version: </p>
