@@ -4,9 +4,9 @@
 <br>
 
 <p>PHP version: 8.3</p>
-<p>Laravel Version: </p>
-<p>Composer Version: </p>
-<p>NPM Version: </p>
+<p>Laravel Version: 11</p>
+<p>Composer Version: 2.8.1</p>
+<p>NPM Version: 22</p>
 
 <br>
 
