@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CalendarController extends Controller
 {
@@ -12,9 +13,15 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-
-        return view('calendar.index', ['users' => $users]);
+        if (Auth::user()) {
+            $users = User::all();
+            // Return the product details view
+            return view('calendar.index', ['users' => $users]);
+        }
+        // Unauthorized endpoint if the user is not logged in
+        else {
+            return abort(401);
+        }
     }
 
     /**
@@ -41,8 +48,16 @@ class CalendarController extends Controller
         // Find the product by ID
         $user = User::findOrFail($id);
 
-        // Return the product details view
-        return view('calendar.show', ['user' => $user]);
+        // If the user is an admin or is the person who's logged in
+        // ATM just if the user is the person who's logged in
+        if ($user == Auth::user()) {
+            // Return the product details view
+            return view('calendar.show', ['user' => $user]);
+        }
+        // Unauthorized endpoint if the user is not logged in
+        else {
+            return abort(401);
+        }
     }
 
     /**
@@ -50,7 +65,19 @@ class CalendarController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        // Find the product by ID
+        $user = User::findOrFail($id);
+
+        // If the user is an admin or is the person who's logged in
+        // ATM just if the user is the person who's logged in
+        if ($user == Auth::user()) {
+            // Return the product details view
+            return view('calendar.edit', ['user' => $user]);
+        }
+        // Unauthorized endpoint if the user is not logged in
+        else {
+            return abort(401);
+        }
     }
 
     /**

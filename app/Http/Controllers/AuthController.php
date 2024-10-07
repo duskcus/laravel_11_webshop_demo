@@ -26,7 +26,7 @@ class AuthController extends Controller
         // Attempt to log the user in
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
         // Authentication passed, redirect to the dashboard or home
-        return redirect()->intended('/home');
+        return redirect()->intended('/');
     }
 
         // Authentication failed, redirect back to login with error
@@ -36,10 +36,10 @@ class AuthController extends Controller
 }
 
     // Handle the logout request
-    public function logout(Request $request)
+     public function logout(Request $request)
     {
         Auth::logout();
-        return redirect('/login');
+        return redirect('/');
     }
 
     public function showRegistrationForm()
@@ -67,6 +67,6 @@ class AuthController extends Controller
         Auth::attempt(['email' => $request->email, 'password' => $request->password]);
 
         // Redirect to home
-        return redirect('/home');
+        return redirect('/');
     }
 }

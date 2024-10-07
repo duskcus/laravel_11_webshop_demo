@@ -13,7 +13,7 @@ class ProductController extends Controller
     public function index()
     {
         // Get all products
-        $products = Product::all();
+        $products = Product::paginate(10); // 15 items per page
 
         // Return a view with products data
         return view('products.index', ['products' => $products]);
@@ -40,7 +40,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'image_url' => 'nullable|string',
+            'image' => 'nullable|string',
             'category' => 'required|string|max:255',
         ]);
 
@@ -86,7 +86,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'image_url' => 'nullable|string',
+            'image' => 'nullable|string',
             'category' => 'required|string|max:255',
         ]);
 

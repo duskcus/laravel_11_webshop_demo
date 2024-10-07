@@ -46,10 +46,6 @@
                 <input type="text" name="category" id="category" class="input input-bordered w-full" placeholder="Category" value="{{$product->category}}" required>
             </div>
 
-            <div class="mt-6">
-                <button type="submit" class="btn btn-primary w-full">Change</button>
-            </div>
-
         </form>
     </section>
 @endsection

@@ -7,8 +7,8 @@
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 
 <body class="mx-auto">
@@ -22,6 +22,8 @@
 
     @include('components.footer')
 
+    @stack('scripts')
+    @livewireScripts
 </body>
 
 </html>

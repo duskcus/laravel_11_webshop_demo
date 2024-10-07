@@ -3,7 +3,39 @@
 {{-- @SECTION FOR THE START CONTENT --}}
 @section('content')
     <section class="mx-auto py-8 px-12 bg-base-100 rounded-md shadow-mdg">
-        <h1 class="text-4xl font-bold mb-6">Users</h1>
+        <div class="w-full">
+            <h1 class="text-4xl font-bold mb-6">Users</h1>
+
+
+            {{-- COMBOBOX --}}
+            <label class="loat-right form-control w-full max-w-xs">
+                <div class="label">
+                    <span class="label-text">Branch</span>
+                    </div>
+                    <select class="select select-bordered">
+                    <option disabled selected>Pick one</option>
+                    {{-- Foreach --}}
+                    <option>Support Desk</option>
+                    <option>Software Development</option>
+                    <option>Human Resources</option>
+                    </select>
+            </label>
+
+            {{-- COMBOBOX --}}
+            <label class="loat-right form-control w-full max-w-xs">
+                <div class="label">
+                    <span class="label-text">Role</span>
+                    </div>
+                    <select class="select select-bordered">
+                    <option disabled selected>Pick one</option>
+                    {{-- Foreach --}}
+                    <option>Support Desk</option>
+                    <option>Software Development</option>
+                    <option>Human Resources</option>
+                    </select>
+            </label>
+        </div>
+
 
         <div class="overflow-x-auto">
             <table class="table">

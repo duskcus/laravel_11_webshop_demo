@@ -29,10 +29,23 @@ class Task extends Model
         'end',
         'description',
         'location',
+        'status',
+        'priority',
+        'estimated_duration',
+        'is_recurring',
+        'recurrence_pattern',
+        'created_by',
     ];
 
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class, 'task_user')
+            ->withPivot('role', 'completed', 'completed_at')
+            ->withTimestamps();
     }
+
+    // public function users()
+    // {
+    //     return $this->belongsToMany(User::class);
+    // }
 }
