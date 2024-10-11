@@ -1,5 +1,4 @@
-<h2>Download the right release for each chapter:</h2>
-<p>I recommend downloading the chapter as I'm still regularly updating/breaking the repository</p>
+<h2>IMPORTANT Download the right release for each chapter and don't click source code as it gives you the github repo's code and as I'm still regularly updating/breaking the repository's code:</h2>
 
 <br>
 
