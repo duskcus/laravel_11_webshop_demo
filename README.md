@@ -1,4 +1,4 @@
-<h2>IMPORTANT Download the right 7zip release for each chapter and don't click source code as it gives you the github repo's code that I still regularly update/break:</h2>
+<h2>Download the correct 7zip release for each chapter and don't click source code as it gives you the github repo's code that I still regularly update/break</h2>
 
 <br>
 
