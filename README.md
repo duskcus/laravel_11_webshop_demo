@@ -2,9 +2,9 @@
   
 For 7zip you can install nanazip: https://apps.microsoft.com/detail/9n8g7tscl18r?hl=nl-NL&gl=NL
   
-**PHP version:** 8.3
-**Laravel Version:** 11
-**Composer Version:** 2.8.1
+**PHP version:** 8.3  
+**Laravel Version:** 11  
+**Composer Version:** 2.8.1  
 **NPM Version:** 22
   
 1. ```composer install```
