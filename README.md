@@ -2,10 +2,10 @@
   
 For 7zip you can install nanazip: https://apps.microsoft.com/detail/9n8g7tscl18r?hl=nl-NL&gl=NL
   
-<p>PHP version: 8.3</p>
-<p>Laravel Version: 11</p>
-<p>Composer Version: 2.8.1</p>
-<p>NPM Version: 22</p>
+<p>**PHP version:** 8.3</p>
+<p>**Laravel Version:** 11</p>
+<p>**Composer Version:** 2.8.1</p>
+<p>**NPM Version:** 22</p>
   
 1. <code>composer install</code>
 2. <code>npm install</code>
@@ -15,3 +15,7 @@ For 7zip you can install nanazip: https://apps.microsoft.com/detail/9n8g7tscl18r
 6. <code>php artisan serve</code>
 7. <code>npm run dev</code>
 8. <p>visit http://127.0.0.1:8000/</p>
+
+**For people that don't know how to properly set-up a development environment:**
+Laravel Migration Error: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes.
+ Stack Source: https://devdojo.com/thinkverse/getting-started-with-tall-stack
