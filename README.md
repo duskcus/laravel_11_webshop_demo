@@ -16,6 +16,7 @@ For 7zip you can install nanazip: https://apps.microsoft.com/detail/9n8g7tscl18r
 7. ```npm run dev```
 8. visit http://127.0.0.1:8000/
 
-**For people that don't know how to properly set-up a development environment:**
+**For people that don't know how to properly set-up a development environment:**  
 Laravel Migration Error: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes.
- Stack Source: https://devdojo.com/thinkverse/getting-started-with-tall-stack
+![image](https://github.com/user-attachments/assets/49b101d9-16b2-464e-af7a-aea5ab8f3a6f)
+
